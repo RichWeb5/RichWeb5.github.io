@@ -1,7 +1,9 @@
 import type { LocalizedText } from './localized';
 
 export interface Project {
-    name: string;
+    /** Localized because some projects are described by what they are rather
+     *  than by a brand name. */
+    name: LocalizedText;
     description: LocalizedText;
     repoUrl?: string;
     liveUrl?: string;

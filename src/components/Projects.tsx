@@ -40,7 +40,7 @@ export default function Projects({ day }: { day: boolean; }) {
                 <AnimatePresence>
                     {siteConfig.projects.slice(0, visibleCount).map((p: Project) => (
                         <motion.div
-                            key={p.name}
+                            key={p.name.en}
                             variants={cardVariants}
                             exit={{ opacity: 0, y: 20 }}
                         >
@@ -48,7 +48,7 @@ export default function Projects({ day }: { day: boolean; }) {
                                 className={`nes-container is-rounded with-title p-4 flex flex-col justify-between ${day ? 'bg-white text-gray-900' : 'is-dark text-gray-100'}`}
                             >
                                 <div>
-                                    <p className="title mb-2">{p.name}</p>
+                                    <p className="title mb-2">{pick(p.name, lang)}</p>
                                     <p className="text-xs md:text-sm mb-4">{pick(p.description, lang)}</p>
                                     {p.technologies && (
                                         <div className="flex flex-wrap gap-2 mb-4">

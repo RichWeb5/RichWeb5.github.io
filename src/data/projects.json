@@ -1,6 +1,9 @@
 [
     {
-        "name": "AnalySEO",
+        "name": {
+            "es": "AnalySEO",
+            "en": "AnalySEO"
+        },
         "description": {
             "es": "Plataforma SaaS de SEO con IA que conecta datos de Google Search Console y Google Analytics 4 para generar auditorías, insights, oportunidades de crecimiento y recomendaciones automáticas. Reduje el tiempo de respuesta del análisis con IA de unos 45 segundos a 10–20 segundos ejecutando tareas independientes en paralelo. Incluye monitoreo de visibilidad en IA, investigación de keywords, análisis de competencia, enlazado interno, reportes, planificación de contenido y publicación en WordPress.",
             "en": "AI powered SEO SaaS platform that connects Google Search Console and Google Analytics 4 data to generate audits, insights, growth opportunities, and automated recommendations. I reduced AI analysis response time from roughly 45 seconds to 10–20 seconds by running independent tasks in parallel. Features include AI visibility monitoring, keyword research, competitor analysis, internal linking, reporting, content planning, and WordPress publishing."
@@ -13,10 +16,13 @@
         ]
     },
     {
-        "name": "Medikal EC",
+        "name": {
+            "es": "App para Estación Meteorológica",
+            "en": "Weather Station App"
+        },
         "description": {
-            "es": "Aplicación móvil en Flutter creada desde cero para un sistema IoT de monitoreo ambiental, con autenticación, roles de usuario, alertas, estadísticas y dashboards de sensores en tiempo real. Integra ocho categorías de sensores: temperatura, humedad, lluvia, viento, humedad del suelo, radiación ultravioleta, luz y pH.",
-            "en": "Flutter mobile application built from the ground up for an IoT environmental monitoring system, with authentication, user roles, alerts, statistics, and real time sensor dashboards. It integrates eight sensor categories: temperature, humidity, rainfall, wind, soil moisture, ultraviolet radiation, light, and pH."
+            "es": "Aplicación móvil en Flutter creada desde cero para una estación meteorológica IoT, con autenticación, roles de usuario, alertas, estadísticas y dashboards de sensores en tiempo real. Integra ocho categorías de sensores: temperatura, humedad, lluvia, viento, humedad del suelo, radiación ultravioleta, luz y pH.",
+            "en": "Flutter mobile application built from the ground up for an IoT weather station, with authentication, user roles, alerts, statistics, and real time sensor dashboards. It integrates eight sensor categories: temperature, humidity, rainfall, wind, soil moisture, ultraviolet radiation, light, and pH."
         },
         "technologies": [
             "Flutter",
@@ -26,7 +32,10 @@
         ]
     },
     {
-        "name": "Enque",
+        "name": {
+            "es": "Enque",
+            "en": "Enque"
+        },
         "description": {
             "es": "Plataforma de ticketing y automatización de flujos de trabajo para cliente, desarrollada en SFX Small Business. Construí flujos automatizados de tickets por correo con Microsoft Graph, webhooks, enrutamiento por equipos, notificaciones, permisos por rol y espacios de trabajo aislados, reduciendo las operaciones manuales de soporte.",
             "en": "Client ticketing and workflow automation platform, developed at SFX Small Business. I built automated email ticket workflows with Microsoft Graph, webhooks, team routing, notifications, role permissions, and isolated workspaces, reducing manual support operations."
@@ -40,7 +49,10 @@
         ]
     },
     {
-        "name": "Activate",
+        "name": {
+            "es": "Activate",
+            "en": "Activate"
+        },
         "description": {
             "es": "Plataforma de cliente para operaciones de fitness, desarrollada en SFX Small Business. Cubre gestión de usuarios, dashboards e interfaces adaptadas a móvil. Soy responsable del desarrollo full stack, la integración de sistemas, el despliegue y el mantenimiento continuo.",
             "en": "Client platform for fitness operations, developed at SFX Small Business. It covers user management, dashboards, and mobile friendly interfaces. I own the full stack development, systems integration, deployment, and ongoing maintenance."
