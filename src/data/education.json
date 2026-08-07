@@ -1,0 +1,28 @@
+[
+    {
+        "school": "Universidad Agraria del Ecuador",
+        "degree": {
+            "es": "Ingeniero en Ciencias de la Computación",
+            "en": "Computer Science Engineer"
+        },
+        "location": {
+            "es": "Guayaquil, Ecuador",
+            "en": "Guayaquil, Ecuador"
+        },
+        "startYear": "2019",
+        "endYear": "2024"
+    },
+    {
+        "school": "Air II Pillahuaso School",
+        "degree": {
+            "es": "Bachiller en Programación",
+            "en": "Bachelor in Programming"
+        },
+        "location": {
+            "es": "Guayaquil, Ecuador",
+            "en": "Guayaquil, Ecuador"
+        },
+        "startYear": "2016",
+        "endYear": "2019"
+    }
+]

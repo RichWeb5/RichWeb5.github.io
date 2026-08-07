@@ -1,0 +1,219 @@
+@import "tailwindcss";
+
+/* Custom NES.css replacement styles */
+.nes-container {
+  position: relative;
+  border: 4px solid #212529;
+  border-radius: 0;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #fff;
+}
+
+.nes-container.is-dark {
+  border-color: #fff;
+  background-color: #212529;
+  color: #fff;
+}
+
+.nes-container.is-rounded {
+  border-radius: 8px;
+}
+
+.nes-container.with-title {
+  padding-top: 2rem;
+}
+
+.nes-container.with-title > .title {
+  position: absolute;
+  top: -1rem;
+  left: 1rem;
+  background-color: inherit;
+  padding: 0 0.5rem;
+  font-weight: bold;
+  font-size: 1.125rem;
+  color: inherit;
+}
+
+.nes-container.is-centered {
+  text-align: center;
+}
+
+.nes-btn {
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 4px solid #212529;
+  border-radius: 0;
+  background-color: #e9ecef;
+  color: #212529;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.1s;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.nes-btn:hover {
+  filter: brightness(0.95);
+  transform: translateY(1px);
+}
+
+.nes-btn:active {
+  transform: translateY(2px);
+  filter: brightness(0.9);
+}
+
+.nes-btn.is-primary {
+  background-color: #007bff;
+  border-color: #0056b3;
+  color: #fff;
+}
+
+.nes-btn.is-success {
+  background-color: #28a745;
+  border-color: #1e7e34;
+  color: #fff;
+}
+
+.nes-btn.is-error {
+  background-color: #dc3545;
+  border-color: #c82333;
+  color: #fff;
+}
+
+.nes-btn.is-small {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+.nes-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.nes-list.is-circle {
+  padding-left: 1rem;
+}
+
+.nes-list.is-circle li {
+  position: relative;
+  padding-left: 1rem;
+  margin: 0.5rem 0;
+}
+
+.nes-list.is-circle li::before {
+  content: "●";
+  position: absolute;
+  left: -0.5rem;
+  color: #212529;
+}
+
+.nes-text.is-primary {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* Dark mode adjustments */
+.nes-container.is-dark .nes-list.is-circle li::before {
+  color: #fff;
+}
+
+.minecraft-world.day {
+  background-image: linear-gradient(
+    to bottom,
+    #6db1ff 0%,
+    #6db1ff 60%,
+    #8bcc53 60%,
+    #8bcc53 64%,
+    #7a674d 64%,
+    #7a674d 94%,
+    #616161 94%,
+    #616161 100%
+  );
+}
+
+.minecraft-world.night {
+  background-image: linear-gradient(
+    to bottom,
+    #0d0b1e 0%,
+    #000000 60%,
+    #2a4a2a 60%,
+    #2a4a2a 64%,
+    #3d3228 64%,
+    #3d3228 94%,
+    #1a1a1a 94%,
+    #1a1a1a 100%
+  );
+}
+
+
+@keyframes swirl {
+  0%   { transform: scale(0)   rotate(0deg);   opacity: 0.8; }
+  100% { transform: scale(1.5) rotate(360deg); opacity: 0;   }
+}
+
+.pixelated {
+  image-rendering: pixelated;
+}
+/* Default NES-style progress (light mode or default) */
+.nes-progress {
+  color: white;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #ffffff;
+  border-image: url("data:image/svg+xml;utf8,<svg%20version='1.1'%20width='5'%20height='5'%20xmlns='http://www.w3.org/2000/svg'><path%20d='M2%201%20h1%20v1%20h-1%20z%20M1%202%20h1%20v1%20h-1%20z%20M3%202%20h1%20v1%20h-1%20z%20M2%203%20h1%20v1%20h-1%20z'%20fill='rgb(33,37,41)'/></svg>") 2 / 2 / 2;
+  width: 100%;
+  height: 48px;
+  margin: 4px;
+}
+
+/* Make sure the bar color stands out */
+.nes-progress::-webkit-progress-bar {
+  background-color: #ffffff;
+}
+.nes-progress::-webkit-progress-value {
+  background-color: #4caf50;
+}
+.nes-progress::-moz-progress-bar {
+  background-color: #4caf50;
+}
+.nes-progress::-ms-fill {
+  background-color: #4caf50;
+  border: none;
+}
+
+/* DARK MODE — specifically for containers using `is-dark` */
+.nes-container.is-dark .nes-progress {
+  background-color: #2a2a2a !important;
+  color: #f5f5f5;
+  border-image: url("data:image/svg+xml;utf8,<svg%20version='1.1'%20width='5'%20height='5'%20xmlns='http://www.w3.org/2000/svg'><path%20d='M2%201%20h1%20v1%20h-1%20z%20M1%202%20h1%20v1%20h-1%20z%20M3%202%20h1%20v1%20h-1%20z%20M2%203%20h1%20v1%20h-1%20z'%20fill='rgb(255,255,255)'/></svg>") 2 / 2 / 2 !important;
+}
+
+.nes-container.is-dark .nes-progress::-webkit-progress-bar {
+  background-color: #2a2a2a !important;
+}
+.nes-container.is-dark .nes-progress::-webkit-progress-value {
+  background-color: #4caf50 !important;
+}
+.nes-container.is-dark .nes-progress::-moz-progress-bar {
+  background-color: #4caf50 !important;
+}
+.nes-container.is-dark .nes-progress::-ms-fill {
+  background-color: #4caf50 !important;
+  border: none !important;
+}
+
+.bg-opacity-90 {
+  background-color: rgba(31, 41, 55, 0.9); /* Adjust the color and opacity as needed */
+}
+
+.perspective {
+  perspective: 1000px;
+}
+
+.nes-container.is-dark .nes-list.is-circle li:before {
+  color: white;
+}

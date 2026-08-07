@@ -1,0 +1,97 @@
+[
+    {
+        "company": "SFX Small Business",
+        "position": {
+            "es": "Desarrollador Full Stack",
+            "en": "Full Stack Developer"
+        },
+        "location": {
+            "es": "Remoto",
+            "en": "Remote"
+        },
+        "startDate": "2023",
+        "endDate": "",
+        "summary": {
+            "es": "Desarrollo full stack, integración de sistemas, despliegue y mantenimiento de plataformas de clientes.",
+            "en": "Full stack development, systems integration, deployment, and maintenance for client platforms."
+        },
+        "highlights": {
+            "es": [
+                "Responsable del desarrollo full stack, la integración de sistemas, el despliegue y el mantenimiento de Enque, Activate y otras plataformas de clientes con Next.js, React, TypeScript, FastAPI, Python, MySQL y Cloudflare.",
+                "Reduje entre 100 y 300 milisegundos ciertas peticiones de autenticación eliminando accesos N+1 a base de datos y optimizando las consultas del backend.",
+                "Construí flujos automatizados de tickets por correo con Microsoft Graph, webhooks, enrutamiento por equipos, notificaciones, permisos por rol y espacios de trabajo aislados, reduciendo el soporte manual.",
+                "Entregué más de 15 mejoras de producto en ticketing, automatización de flujos, gestión de usuarios, operaciones de fitness, dashboards e interfaces adaptadas a móvil.",
+                "Gestioné depuración en producción, cambios de base de datos, integraciones de API, reglas de seguridad, releases y mantenimiento técnico continuo de sistemas de cara al cliente."
+            ],
+            "en": [
+                "Own full stack development, systems integration, deployment, and maintenance for Enque, Activate, and other client platforms using Next.js, React, TypeScript, FastAPI, Python, MySQL, and Cloudflare.",
+                "Improved selected authentication requests by approximately 100 to 300 milliseconds by removing N+1 database access and optimizing backend queries.",
+                "Built automated email ticket workflows with Microsoft Graph, webhooks, team routing, notifications, role permissions, and isolated workspaces, reducing manual support operations.",
+                "Delivered more than 15 product enhancements across ticketing, workflow automation, user management, fitness operations, dashboards, and mobile friendly interfaces.",
+                "Managed production debugging, database changes, API integrations, security rules, releases, and ongoing technical maintenance for client facing systems."
+            ]
+        }
+    },
+    {
+        "company": "Silma Digital",
+        "position": {
+            "es": "Desarrollador de Software y WordPress",
+            "en": "Software Developer and WordPress Developer"
+        },
+        "location": {
+            "es": "Remoto",
+            "en": "Remote"
+        },
+        "startDate": "2023",
+        "endDate": "2025",
+        "summary": {
+            "es": "Sitios WordPress, landing pages, experiencias de ecommerce y portales de clientes.",
+            "en": "WordPress websites, landing pages, ecommerce experiences, and client portals."
+        },
+        "highlights": {
+            "es": [
+                "Desarrollé y mantuve sitios WordPress responsivos, landing pages, experiencias de ecommerce y portales de clientes con Elementor, Bricks, PHP, JavaScript, HTML, CSS y WooCommerce.",
+                "Mejoré la usabilidad y las rutas de conversión creando maquetaciones a medida, formularios, flujos de checkout, integraciones, plugins y componentes responsivos desde los requisitos iniciales.",
+                "Mantuve sitios en producción mediante actualizaciones, resolución de incidencias, mejoras de rendimiento, implementación de contenido y cambios solicitados por el cliente.",
+                "Colaboré en remoto con clientes y diseñadores para traducir objetivos de negocio en soluciones web estables y fáciles de usar."
+            ],
+            "en": [
+                "Developed and maintained responsive WordPress websites, landing pages, ecommerce experiences, and client portals using Elementor, Bricks, PHP, JavaScript, HTML, CSS, and WooCommerce.",
+                "Improved usability and conversion paths by building custom layouts, forms, checkout flows, integrations, plugins, and responsive components from initial requirements.",
+                "Maintained production websites through updates, troubleshooting, performance improvements, content implementation, and client requested changes.",
+                "Collaborated remotely with clients and designers to translate business goals into stable and user friendly web solutions."
+            ]
+        }
+    },
+    {
+        "company": "Freelance",
+        "position": {
+            "es": "Desarrollador Web Freelance",
+            "en": "Freelance Web Developer"
+        },
+        "location": {
+            "es": "Independiente",
+            "en": "Independent"
+        },
+        "startDate": "2019",
+        "endDate": "",
+        "summary": {
+            "es": "Sitios web, tiendas online y funcionalidad a medida para pequeños negocios y clientes independientes.",
+            "en": "Websites, online stores, and custom functionality for small businesses and independent clients."
+        },
+        "highlights": {
+            "es": [
+                "Desarrollé sitios web responsivos, landing pages, soluciones WordPress, tiendas de ecommerce y funcionalidad web a medida para pequeños negocios y clientes independientes.",
+                "Construí y personalicé sitios con WordPress, PHP, JavaScript, HTML, CSS, Bootstrap, Elementor, Bricks y WooCommerce.",
+                "Gestioné proyectos desde los requisitos iniciales hasta la implementación del diseño, el desarrollo, las pruebas, el despliegue, la resolución de incidencias y el mantenimiento continuo.",
+                "Mejoré la usabilidad, la adaptación a móvil, el rendimiento y las rutas de conversión implementando maquetaciones a medida, formularios, integraciones y experiencias de checkout."
+            ],
+            "en": [
+                "Developed responsive websites, landing pages, WordPress solutions, ecommerce stores, and custom web functionality for small businesses and independent clients.",
+                "Built and customized websites using WordPress, PHP, JavaScript, HTML, CSS, Bootstrap, Elementor, Bricks, and WooCommerce.",
+                "Managed projects from initial requirements through design implementation, development, testing, deployment, troubleshooting, and ongoing maintenance.",
+                "Improved website usability, mobile responsiveness, performance, and conversion paths by implementing custom layouts, forms, integrations, and checkout experiences."
+            ]
+        }
+    }
+]

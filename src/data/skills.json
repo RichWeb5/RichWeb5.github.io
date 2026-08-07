@@ -1,0 +1,70 @@
+[
+    {
+        "title": {
+            "es": "Frontend",
+            "en": "Frontend"
+        },
+        "skills": [
+            { "name": "React", "icon": "TbBrandReact", "library": "react-icons/tb" },
+            { "name": "Next.js", "icon": "TbBrandNextjs", "library": "react-icons/tb" },
+            { "name": "TypeScript", "icon": "TbBrandTypescript", "library": "react-icons/tb" },
+            { "name": "JavaScript", "icon": "TbBrandJavascript", "library": "react-icons/tb" },
+            { "name": "HTML", "icon": "TbBrandHtml5", "library": "react-icons/tb" },
+            { "name": "CSS", "icon": "TbBrandCss3", "library": "react-icons/tb" },
+            { "name": "Bootstrap", "icon": "TbBrandBootstrap", "library": "react-icons/tb" }
+        ]
+    },
+    {
+        "title": {
+            "es": "Backend",
+            "en": "Backend"
+        },
+        "skills": [
+            { "name": "Python", "icon": "TbBrandPython", "library": "react-icons/tb" },
+            { "name": "FastAPI", "icon": "SiFastapi", "library": "react-icons/si" },
+            { "name": "PHP", "icon": "TbBrandPhp", "library": "react-icons/tb" }
+        ]
+    },
+    {
+        "title": {
+            "es": "Datos y Cloud",
+            "en": "Data and Cloud"
+        },
+        "skills": [
+            { "name": "MySQL", "icon": "TbBrandMysql", "library": "react-icons/tb" },
+            { "name": "Redis", "icon": "SiRedis", "library": "react-icons/si" },
+            { "name": "Cloudflare", "icon": "TbBrandCloudflare", "library": "react-icons/tb" },
+            { "name": "AWS S3", "icon": "SiAmazons3", "library": "react-icons/si" },
+            { "name": "Railway", "icon": "SiRailway", "library": "react-icons/si" }
+        ]
+    },
+    {
+        "title": {
+            "es": "Plataformas e Integraciones",
+            "en": "Platforms and Integrations"
+        },
+        "skills": [
+            { "name": "WordPress", "icon": "TbBrandWordpress", "library": "react-icons/tb" },
+            { "name": "WooCommerce", "icon": "SiWoocommerce", "library": "react-icons/si" },
+            { "name": "Elementor", "icon": "SiElementor", "library": "react-icons/si" },
+            { "name": "Microsoft Graph", "icon": "TbBrandOffice", "library": "react-icons/tb" },
+            { "name": "Google Search Console", "icon": "SiGooglesearchconsole", "library": "react-icons/si" },
+            { "name": "Google Analytics 4", "icon": "SiGoogleanalytics", "library": "react-icons/si" },
+            { "name": "Stripe", "icon": "TbBrandStripe", "library": "react-icons/tb" }
+        ]
+    },
+    {
+        "title": {
+            "es": "Móvil y Herramientas",
+            "en": "Mobile and Tools"
+        },
+        "skills": [
+            { "name": "Flutter", "icon": "TbBrandFlutter", "library": "react-icons/tb" },
+            { "name": "Dart", "icon": "SiDart", "library": "react-icons/si" },
+            { "name": "Git", "icon": "TbBrandGit", "library": "react-icons/tb" },
+            { "name": "GitHub", "icon": "TbBrandGithub", "library": "react-icons/tb" },
+            { "name": "Postman", "icon": "SiPostman", "library": "react-icons/si" },
+            { "name": "VS Code", "icon": "TbBrandVscode", "library": "react-icons/tb" }
+        ]
+    }
+]

@@ -1,0 +1,15 @@
+{
+    "name": "Richard Castro",
+    "title": {
+        "es": "Desarrollador Full Stack",
+        "en": "Full Stack Developer"
+    },
+    "tagline": {
+        "es": "🚀 Desarrollador Full Stack | React, Next.js, Python",
+        "en": "🚀 Full Stack Developer | React, Next.js, Python"
+    },
+    "summary": {
+        "es": "Desarrollador Full Stack con más de seis años de experiencia construyendo, integrando, desplegando y manteniendo aplicaciones web, plataformas SaaS, sitios WordPress, aplicaciones móviles y sistemas automatizados. Llevo funcionalidades desde los requisitos y la arquitectura hasta la implementación, las pruebas, el soporte en producción y la entrega al cliente.",
+        "en": "Full Stack Developer with more than six years of professional experience building, integrating, deploying, and maintaining web applications, SaaS platforms, WordPress websites, mobile applications, and automated systems. I own features from requirements and architecture through implementation, testing, production support, and client delivery."
+    }
+}
