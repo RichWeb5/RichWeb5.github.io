@@ -70,10 +70,12 @@ export default function Banner({ day, toggleDayNight }: { day: boolean; toggleDa
         );
     };
 
+    // w-full rather than w-screen: 100vw includes the vertical scrollbar, which
+    // made the bar wider than the viewport and scrolled the whole page sideways.
     return (
         <div
-            className={`w-screen ${isOpen ? 'p-2 h-auto text-4xl' : 'p-3 h-17 text-2xl'
-                } bg-gray-800 bg-opacity-90 text-white flex flex-col md:flex-row justify-between items-center fixed top-0 left-0 z-50 transition-all duration-500 ease-in-out border-b-2 border-gray-500`}
+            className={`w-full ${isOpen ? 'p-2 h-auto text-4xl' : 'p-3 h-17 text-2xl'
+                } px-4 md:px-6 bg-gray-800 bg-opacity-90 text-white flex flex-col md:flex-row justify-between items-center fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out border-b-2 border-gray-500`}
         >
             <div className="flex justify-between items-center w-full md:w-auto">
                 <div className="content-start">

@@ -7,18 +7,12 @@ import Banner from './Banner';
 import { FaRegCopyright } from 'react-icons/fa';
 import { siteConfig } from '@/config/site';
 import { useLanguage } from '@/i18n/LanguageProvider';
+import { Clouds, Stars } from './SkyDecor';
 
 export default function MinecraftLayout({ children, setDayOrNight }: { children: React.ReactNode, setDayOrNight: any }) {
     const [day, setDay] = useState(true);
     const [isEntered, setIsEntered] = useState(false);
     const { t } = useLanguage();
-
-    const cloudCount = 10;
-    const clouds = Array.from({ length: cloudCount }, () => ({
-        top: `${Math.random() * 30 + 2}vh`,
-        duration: 30 + Math.random() * 50,
-        delay: Math.random() * 10
-    }));
 
     useEffect(() => {
         const hour = new Date().getHours();
@@ -48,46 +42,7 @@ export default function MinecraftLayout({ children, setDayOrNight }: { children:
         >
             {isEntered && <Banner day={day} toggleDayNight={toggleDayNight} />}
             <AnimatePresence>
-                {day ? (
-                    <div className="absolute top-0 left-0 w-full h-120 overflow-hidden pointer-events-none">
-                        {clouds.map((cloud, i) => (
-                            <motion.div
-                                key={i}
-                                className="absolute w-40 h-18 bg-white opacity-80 rounded-full shadow-md z-10"
-                                style={{ top: cloud.top, left: '-200px' }}
-                                animate={{ left: '110vw' }}
-                                transition={{
-                                    duration: cloud.duration,
-                                    ease: 'linear',
-                                    repeat: Infinity,
-                                    delay: cloud.delay,
-                                }}
-                            />
-                        ))}
-                    </div>
-                ) : (
-                    <motion.div
-                        className="absolute top-0 left-0 w-full h-120 z-10 overflow-hidden pointer-events-none"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        transition={{ duration: 1 }}
-                    >
-                        {[...Array(90)].map((_, i) => (
-                            <motion.div
-                                key={i}
-                                className="absolute w-1.5 h-1.5 bg-white rounded-full"
-                                initial={{ opacity: 0.5 }}
-                                animate={{ opacity: [0.3, 1, 0.3] }}
-                                transition={{ duration: 2 + Math.random(), repeat: Infinity }}
-                                style={{
-                                    top: `${Math.random() * 100}%`,
-                                    left: `${Math.random() * 100}%`,
-                                }}
-                            />
-                        ))}
-                    </motion.div>
-                )}
+                {day ? <Clouds key="clouds" /> : <Stars key="stars" />}
             </AnimatePresence>
             {!isEntered && (
                 <div className="border-none">
