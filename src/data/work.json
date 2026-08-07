@@ -64,6 +64,37 @@
         }
     },
     {
+        "company": "Digital Track",
+        "position": {
+            "es": "Desarrollador Web",
+            "en": "Web Developer"
+        },
+        "location": {
+            "es": "Remoto",
+            "en": "Remote"
+        },
+        "startDate": "2022",
+        "endDate": "",
+        "summary": {
+            "es": "Proyectos de sitios en WordPress y Builderall, desde nuevas funcionalidades hasta sitios completos.",
+            "en": "WordPress and Builderall site projects, from new functionality to complete builds."
+        },
+        "highlights": {
+            "es": [
+                "Me encargué de proyectos de sitios en WordPress, añadiendo nuevas funcionalidades a instalaciones existentes según los requisitos de cada cliente.",
+                "Creé sitios completos desde cero en Builderall, cubriendo estructura, maquetación, contenido y publicación.",
+                "Publiqué y mantuve contenido de blogs, cuidando el formato, las imágenes y la coherencia editorial de cada sitio.",
+                "Di mantenimiento continuo a los sitios en producción con actualizaciones, ajustes y cambios solicitados por el cliente."
+            ],
+            "en": [
+                "Owned WordPress site projects, adding new functionality to existing installations based on each client's requirements.",
+                "Built complete websites from scratch in Builderall, covering structure, layout, content, and publishing.",
+                "Published and maintained blog content, keeping formatting, images, and editorial consistency across each site.",
+                "Provided ongoing maintenance for production sites through updates, adjustments, and client requested changes."
+            ]
+        }
+    },
+    {
         "company": "Freelance",
         "position": {
             "es": "Desarrollador Web Freelance",

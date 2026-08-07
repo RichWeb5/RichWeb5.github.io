@@ -12,7 +12,7 @@ export default function WorkExperience({ day }: { day: boolean }) {
     const { t } = useLanguage()
 
     return (
-        <section className={`nes-container with-title is-rounded p-6 ${day ? 'bg-gray-100' : 'is-dark'}`}>
+        <section id="work" className={`nes-container with-title is-rounded p-6 ${day ? 'bg-gray-100' : 'is-dark'}`}>
             <p className="title mb-4">{t('work.title')}</p>
             <div className="grid grid-cols-1 md:grid-cols-2 items-start gap-6">
                 {siteConfig.work.map(job => (
@@ -29,9 +29,8 @@ function WorkCard({ job, day }: { job: Work, day: boolean }) {
     const { t, lang } = useLanguage()
     return (
         <motion.article
-            id="work"
             layout
-            className={`relative nes-container is-rounded with-title p-4 flex flex-col justify-between pb-12 ${day ? 'bg-white text-gray-900' : 'is-dark text-gray-100'}`}
+            className={`nes-container is-rounded with-title p-4 flex flex-col ${day ? 'bg-white text-gray-900' : 'is-dark text-gray-100'}`}
         >
             <div>
                 <h3 className="font-bold text-sm md:text-lg">
@@ -52,9 +51,11 @@ function WorkCard({ job, day }: { job: Work, day: boolean }) {
                     </ul>
                 </div>
             )}
+            {/* Flows after the content instead of being pinned, so a long
+                highlight list can never run underneath the button. */}
             <button
                 onClick={() => setOpen(o => !o)}
-                className="nes-btn absolute bottom-4 left-1/2 transform -translate-x-1/2 nes-btn is-primary is-small flex items-center gap-1"
+                className="nes-btn is-primary is-small self-center mt-4"
             >
                 <div className="flex items-center gap-2">
                     {open ? <FiChevronUp size={16} /> : <FiChevronDown size={16} />}

@@ -33,12 +33,12 @@ export default function Home() {
 
   return (
     <MinecraftLayout setDayOrNight={setDay}>
-      <div className="container mx-auto flex flex-col flex-grow w-full p-2 pt-12 gap-4">
+      <div className="container mx-auto flex flex-col flex-grow w-full p-2 pt-24 md:pt-28 gap-6 md:gap-8">
         <Hero day={day} />
+        <WorkExprience day={day} />
         <Projects day={day} />
         <Skills day={day} />
         <GitHub day={day} />
-        <WorkExprience day={day} />
         <Education day={day} />
         <Contact day={day} />
       </div>

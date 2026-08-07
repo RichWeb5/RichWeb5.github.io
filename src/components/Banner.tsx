@@ -19,6 +19,7 @@ export default function Banner({ day, toggleDayNight }: { day: boolean; toggleDa
     const links = [
         { id: 'work', label: t('nav.work') },
         { id: 'projects', label: t('nav.projects') },
+        { id: 'education', label: t('nav.education') },
         { id: 'contact', label: t('nav.contact') },
     ];
 

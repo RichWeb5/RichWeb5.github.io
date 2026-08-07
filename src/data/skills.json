@@ -47,6 +47,7 @@
             { "name": "WordPress", "icon": "TbBrandWordpress", "library": "react-icons/tb" },
             { "name": "WooCommerce", "icon": "SiWoocommerce", "library": "react-icons/si" },
             { "name": "Elementor", "icon": "SiElementor", "library": "react-icons/si" },
+            { "name": "Builderall", "icon": "TbTemplate", "library": "react-icons/tb" },
             { "name": "Microsoft Graph", "icon": "TbBrandOffice", "library": "react-icons/tb" },
             { "name": "Google Search Console", "icon": "SiGooglesearchconsole", "library": "react-icons/si" },
             { "name": "Google Analytics 4", "icon": "SiGoogleanalytics", "library": "react-icons/si" },

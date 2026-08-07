@@ -4,6 +4,7 @@ export const dictionary = {
     es: {
         'nav.work': 'Experiencia',
         'nav.projects': 'Proyectos',
+        'nav.education': 'Educación',
         'nav.contact': 'Contacto',
         'nav.blog': 'Blog',
         'nav.source': 'Código',
@@ -47,6 +48,7 @@ export const dictionary = {
     en: {
         'nav.work': 'Experience',
         'nav.projects': 'Projects',
+        'nav.education': 'Education',
         'nav.contact': 'Contact',
         'nav.blog': 'Blog',
         'nav.source': 'Source',
