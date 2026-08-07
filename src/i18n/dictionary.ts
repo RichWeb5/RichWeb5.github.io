@@ -14,8 +14,6 @@ export const dictionary = {
         'portal.intro.after': '. ¡Explora mi mundo de código en píxeles!',
         'portal.cta': 'VER MI TRABAJO',
 
-        'hero.title': 'Bienvenido a mi portafolio pixelado.',
-
         'projects.title': 'Proyectos',
         'projects.viewRepo': 'Ver Repo',
         'projects.viewApp': 'Ver App',
@@ -57,8 +55,6 @@ export const dictionary = {
         'portal.intro.before': 'I’m ',
         'portal.intro.after': '. Explore my blocky world of code!',
         'portal.cta': 'EXPLORE MY WORK',
-
-        'hero.title': 'Welcome to my pixel-perfect portfolio.',
 
         'projects.title': 'Projects',
         'projects.viewRepo': 'View Repo',

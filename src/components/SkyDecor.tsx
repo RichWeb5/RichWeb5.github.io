@@ -43,6 +43,79 @@ function PixelCloud({ unit }: { unit: number }) {
     );
 }
 
+const BIRD_COUNT = 3;
+
+/** A blocky bird whose two wings beat out of phase with each other, so the
+ *  silhouette alternates between a rising and a falling V. */
+function PixelBird({ unit }: { unit: number }) {
+    const block = 'absolute bg-gray-800';
+    const flap = {
+        duration: 0.5,
+        repeat: Infinity,
+        ease: 'easeInOut' as const,
+    };
+
+    return (
+        <div className="relative" style={{ width: unit * 7, height: unit * 5 }}>
+            {/* Body */}
+            <div className={block} style={{ left: unit * 3, top: unit * 2, width: unit, height: unit }} />
+
+            {/* Left wing: up, then down */}
+            <motion.div
+                className={block}
+                style={{ left: unit, width: unit * 2, height: unit }}
+                animate={{ top: [unit, unit * 3, unit] }}
+                transition={flap}
+            />
+            <motion.div
+                className={block}
+                style={{ left: 0, width: unit, height: unit }}
+                animate={{ top: [0, unit * 3.6, 0] }}
+                transition={flap}
+            />
+
+            {/* Right wing mirrors the left */}
+            <motion.div
+                className={block}
+                style={{ left: unit * 4, width: unit * 2, height: unit }}
+                animate={{ top: [unit, unit * 3, unit] }}
+                transition={flap}
+            />
+            <motion.div
+                className={block}
+                style={{ left: unit * 6, width: unit, height: unit }}
+                animate={{ top: [0, unit * 3.6, 0] }}
+                transition={flap}
+            />
+        </div>
+    );
+}
+
+function Birds() {
+    return (
+        <>
+            {Array.from({ length: BIRD_COUNT }, (_, i) => {
+                const top = spread(i, 21.317, 8, 55);
+                const unit = Math.round(spread(i, 61.803, 3, 6));
+                const duration = spread(i, 17.451, 22, 38);
+                const delay = -spread(i, 55.219, 0, 30);
+
+                return (
+                    <motion.div
+                        key={`bird-${i}`}
+                        className="absolute"
+                        style={{ top: `${top}%`, left: '-120px' }}
+                        animate={{ left: '110vw' }}
+                        transition={{ duration, ease: 'linear', repeat: Infinity, delay }}
+                    >
+                        <PixelBird unit={unit} />
+                    </motion.div>
+                );
+            })}
+        </>
+    );
+}
+
 export function Clouds() {
     return (
         <div
@@ -67,6 +140,7 @@ export function Clouds() {
                     </motion.div>
                 );
             })}
+            <Birds />
         </div>
     );
 }

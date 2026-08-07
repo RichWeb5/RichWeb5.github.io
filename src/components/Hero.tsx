@@ -6,12 +6,10 @@ import { useLanguage } from '@/i18n/LanguageProvider'
 import { pick } from '@/types/localized'
 
 export default function Hero({ day }: { day: boolean }) {
-    const { t, lang } = useLanguage()
+    const { lang } = useLanguage()
 
     return (
-        <section className={`nes-container with-title is-rounded bg-gray-200 ${day ? "" : "is-dark"}`
-        }>
-            <p className="title">{t('hero.title')}</p>
+        <section className={`nes-container is-rounded bg-gray-200 ${day ? "" : "is-dark"}`}>
             <div className='flex flex-col items-center gap-3'>
                 <Image
                     src="/richard-pixel.png"

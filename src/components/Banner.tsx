@@ -103,7 +103,7 @@ export default function Banner({ day, toggleDayNight }: { day: boolean; toggleDa
                     <a
                         key={link.id}
                         href={`#${link.id}`}
-                        className="text-white text-xs"
+                        className="text-white text-xs cursor-pointer px-3 py-2 rounded border-2 border-gray-500 hover:border-white hover:bg-gray-700 hover:text-yellow-300 transition-colors duration-200"
                         onClick={(e) => handleLinkClick(e, link.id)}
                     >
                         {link.label}
@@ -134,12 +134,12 @@ export default function Banner({ day, toggleDayNight }: { day: boolean; toggleDa
                 {socialComponent()}
             </div>
             <div className="hidden md:flex gap-2 items-center">
-                <div className="flex gap-2 items-center">
+                <div className="flex gap-3 items-center">
                     {links.map((link) => (
                         <a
                             key={link.id}
                             href={`#${link.id}`}
-                            className="text-white text-xs"
+                            className="text-white text-xs cursor-pointer px-2 py-1 rounded border-2 border-transparent hover:border-white hover:bg-gray-700 hover:text-yellow-300 transition-colors duration-200"
                             onClick={(e) => handleLinkClick(e, link.id)}
                         >
                             {link.label}
